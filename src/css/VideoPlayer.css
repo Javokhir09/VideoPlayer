@@ -1,0 +1,32 @@
+.video-player {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  position: relative;
+}
+.video-player .controls {
+  width: 100%;
+  height: 35px;
+  background-color: #303030;
+  display: flex;
+  align-items: center;
+  padding: 5px 5px;
+}
+.video-player .controls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.15s;
+  &:hover {
+    background-color: #555555;
+  }
+}
+.video-player .controls input[type="range"] {
+  width: 100%;
+}

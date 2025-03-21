@@ -1,4 +1,6 @@
 import React, { useRef, useState } from 'react'
+import { FaPause, FaPlay } from 'react-icons/fa';
+import "../css/VideoPlayer.css"
 
 function VideoPlayer({ src }) {
   const videoRef = useRef(null);
@@ -36,14 +38,14 @@ function VideoPlayer({ src }) {
           className='video'
         ></video>
         <div className="controls">
-          <button className='play-pause'>{isPlaying ? "Pause" : "Play"}</button>
+          <button className='play-pause' onClick={togglePlayPause}>{isPlaying ? <FaPause /> : <FaPlay />}</button>
           <input 
             type="range"
             min="0"
             max="100"
             value={progress}
             onChange={handleSeek}
-            className='progress'  
+            className='progress'
           />
         </div>
       </div>

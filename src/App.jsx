@@ -1,9 +1,10 @@
 import VideoPlayer from "./components/VideoPlayer"
+import video from "../public/elon_musk.mp4"
 
 function App() {
   return (
     <>
-      <VideoPlayer />
+      <VideoPlayer src={video} />
     </>
   )
 }
